@@ -1,6 +1,6 @@
 ;----------------------------------------------------------------------------------------------------|
 ; Name Program: Janitor Temp									 			    				 	 |
-; Author:Pinheiro																             		 |
+; Author: Pinheiro																             	|	 
 ; Version: 0.5																			  			 |
 ; Quick Description: Deletes files in the %temp% and c:\windows\temp folders					 	 |
 ; Used DLL's: User32.dll; Shell32.dll; Kernel32.dll;												 |
@@ -135,3 +135,4 @@
   push 0
   call _MessageBoxA
   ret
+
