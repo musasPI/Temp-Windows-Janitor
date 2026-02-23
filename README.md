@@ -5,7 +5,7 @@ Cleans files in the %temp% and C:\Windows\Temp folders
 The execute file (.exe) is flagged as malware because the code modifies Temp files and using Shell32.dll and User32.dll.
 I'm working on it
 
-## I'm begginer on Assembly Language
+## I'm beginner on Assembly Language
 Don't worry about code!
 
 Adiós 🐱‍👤
