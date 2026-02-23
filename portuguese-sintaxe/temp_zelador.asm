@@ -1,23 +1,16 @@
-;----------------------------------------------------------------------------------------------------|
-; Nome Programa: Janitor Temp									 			    				 	 |
-; Autor: Pinheiro																             		 |
-; Versão: 0.5																			  			 |
-; Descrição Breve: Deleta arquivos na pasta %temp% e na pasta c:\windows\temp				 	 	 |
-; DLL's Usadas: User32.dll; Shell32.dll; Kernel32.dll;												 |
-;----------------------------------------------------------------------------------------------------|
-  
-  extern GetUserDefaultUILanguage
+;-------------------------------------------------------------------------------%
+; Name Programa: Temp Janitor                                                   ?
+; Autor:Pinheiro                                                                !
+; Versão: 0.5                                                                   ?
+; Descrição Breve: Deleta arquivos na pasta %temp% e na pasta c:\windows\temp   !
+; DLL's Usadas: User32.dll; Shell32.dll; Kernel32.dll;                          ?												  
+;-------------------------------------------------------------------------------%
+
   extern _MessageBoxA
   extern _ShellExecuteA
-  extern Sleep
 
   section .data
   box_title db "Temp Janitor",0
-  box_message db "W-Wait! The Janitor is looking for his broom",0
-  box_message_alt db "The Janitor found the broom and now it's time for a magic clean!",0
-  box_message_cancel db "Thats OK! Maybe you are a cockroach",0
-  box_message_end db "The Janitor cleaned your temporary files but some files were not cleaned because they are currently running.",0
-  
   box_message_pt db "Ei-ei espere! O Zelador está em procura da vassoura.",0
   box_message_alt_pt db "O Zelador terminou sua procura e encontrou sua vassoura, agora ele irá voltar ao trabalho!",0
   box_message_cancel_pt db "Éhh tá bom, talvez você seja uma barata ou um ratinho de esgoto",0
@@ -29,37 +22,31 @@
   param db "/c cd c:\windows\temp && erase *.* /f /s /q ",0
   
   section .code
-  global _amanto
+  global _flaggedware
  
-  _amanto:
-
-   call GetUserDefaultUILanguage
-   cmp eax, 0x0416
-   je translate_pt
+  _flaggedware:
    
-  ;#####################################
-  ;	  Caixa de Mensagem EN-US/EN-UK  #
-  ;#####################################
+  ;#############################
+  ; Caixa de Mensagem Inicial #
+  ;#############################
   push 0x30
   push box_title
-  push box_message
+  push box_message_pt
   push 0
   call _MessageBoxA
-
-
-  ;################################################
-  ;   Caixa de Mensagem Secundário EN-US/EN-UK #
-  ;################################################
+ 
+  ;################################
+  ; Caixa de Mensagem Secundário #
+  ;################################
   push 0x40
   push box_title
-  push box_message_alt
+  push box_message_alt_pt
   push 0
   call _MessageBoxA
 
-  
-  ;###################################
-  ;	  Limpa os arquivos de %temp%  #
-  ;###################################
+  ;###############################
+  ; Limpa os arquivos de %temp% #
+  ;###############################
   madao:
   push 0
   push 0
@@ -69,10 +56,9 @@
   push 0
   call _ShellExecuteA
   
-  
-  ;##############################################
-  ;	  Limpa os arquivos de C:\Windows\Temp   #
-  ;#############################################
+  ;########################################
+  ; Limpa os arquivos de C:\Windows\Temp #
+  ;########################################
   push 0
   push 0
   push param
@@ -81,58 +67,12 @@
   push 0
   call _ShellExecuteA
   
-
-  ;###################
-  ;	   1s Delay   #
-  ;###################
-  xor eax, eax
-  mov eax, 1000
-  push eax
-  call Sleep
-  call GetUserDefaultUILanguage
-  cmp eax, 0x0416
-  jmp final_pt
-  
- 
-  ;############################################
-  ;	  Caixa de Mensagem Final EN-US/EN-UK  #
-  ;###########################################
-  push 0x40
-  push box_title
-  push box_message_end
-  push 0
-  call _MessageBoxA
-  ret
-  
-  
-  ;####################################################################
-  ; Translation for Portuguese - Tradução do texto para o Português #
-  ;####################################################################
-  translate_pt:
-  push 0x30
-  push box_title
-  push box_message_pt
-  push 0
-  call _MessageBoxA
- 
-  ;########################################
-  ; Caixa de Mensagem Secundário PT-BR #
-  ;#######################################
-  push 0x40
-  push box_title
-  push box_message_alt_pt
-  push 0
-  call _MessageBoxA
-  jmp madao
-  
-  ;##################################
-  ;	Caixa de Mensagem Final PT-BR #
-  ;##################################
-  final_pt:
+  ;###########################
+  ; Caixa de Mensagem Final #
+  ;###########################
   push 0x40
   push box_title
   push box_message_end_pt
   push 0
   call _MessageBoxA
   ret
-
