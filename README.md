@@ -1,4 +1,4 @@
-# Temp Janitor 32-Bits
+# 🧹Temp Janitor 32-Bits🪠
 Cleans files in the %temp% and C:\Windows\Temp folders
 
 # .EXE flagged as malware
@@ -10,7 +10,7 @@ Don't worry about code!
 
 Adiós 🐱‍👤
 
-# Temp Janitor 32-Bits
+# 🪠 Temp Janitor 32-Bits 🧹
 Limpa os arquivos na pasta %Temp% e na pasta C:\Windows\Temp
 
 # .EXE sinalizado como Malware
