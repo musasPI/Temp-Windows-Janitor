@@ -8,7 +8,7 @@
 ## Building the Executable
 If you want to use the tool, it is recommended to assemble the executable from the source code (.asm) using the **NASM** assembler and the **GoLink** linker.
 
-Assembling: *nasm -f win32 file.asm*
+Assembling: *nasm -f win32 janitor_temp.asm*
 
 Linking: *golink /entry _amanto janitor_temp.obj Shell32.dll User32.dll Kernel32.dll /mix*
 
@@ -28,7 +28,7 @@ Adiós 🐱‍👤
 ## Montando o Executável
 Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executável pelo código-fonte (.asm), utilizando do montador (assembler) **NASM** e o ligador (linker) **GoLink**.
 
-Montar: *nasm -f win32 file.asm*
+Montar: *nasm -f win32 janitor_temp.asm*
 
 Ligar: *golink /entry _amanto janitor_temp.obj Shell32.dll User32.dll Kernel32.dll /mix*
 
