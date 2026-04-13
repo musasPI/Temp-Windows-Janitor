@@ -1,12 +1,12 @@
 ;----------------------------------------------------------------------------------------------------|
 ; Name Program: Janitor Temp									 			    				 	 |
 ; Author: Pinheiro																             		 |
-; Version: 0.5																			  			 |
+; Version: 0.25																			  			 |
 ; Quick Description: Deletes files in the %temp% and c:\windows\temp folders					 	 |
 ; Used DLL's: User32.dll; Shell32.dll; Kernel32.dll;												 |
 ;----------------------------------------------------------------------------------------------------|
   
-  extern GetUserDefaultUILanguage
+  ;extern GetUserDefaultUILanguage
   extern _MessageBoxA
   extern _ShellExecuteA
   extern Sleep
@@ -18,10 +18,10 @@
   box_message_cancel db "Thats OK! Maybe you are a cockroach",0
   box_message_end db "The Janitor cleaned your temporary files but some files were not cleaned because they are currently running.",0
   
-  box_message_pt db "Ei-ei espere! O Zelador está em procura da vassoura.",0
-  box_message_alt_pt db "O Zelador terminou sua procura e encontrou sua vassoura, agora ele irá voltar ao trabalho!",0
-  box_message_cancel_pt db "Éhh tá bom, talvez você seja uma barata ou um ratinho de esgoto",0
-  box_message_end_pt db "O Zelador limpou os arquivos temporários, porém nem todos foram limpos porque são necessários para a execução de aplicações!",0
+  ;box_message_pt db "Ei-ei espere! O Zelador está em procura da vassoura.",0
+  ;box_message_alt_pt db "O Zelador terminou sua procura e encontrou sua vassoura, agora ele irá voltar ao trabalho!",0
+  ;box_message_cancel_pt db "Éhh tá bom, talvez você seja uma barata ou um ratinho de esgoto",0
+  ;box_message_end_pt db "O Zelador limpou os arquivos temporários, porém nem todos foram limpos porque são necessários para a execução de aplicações!",0
   
   app db "cmd",0
   funct db "runas",0
@@ -33,14 +33,14 @@
  
   _amanto:
 
-   call GetUserDefaultUILanguage
-   cmp eax, 0x0416
-   je translate_pt
+   ;call GetUserDefaultUILanguage
+   ;cmp eax, 0x0416
+   ;je translate_pt
    
   ;###########################
   ;	  Initial Message Box  #
   ;###########################
-  push 0x30
+  push 0x30 ;1
   push box_title
   push box_message
   push 0
@@ -50,7 +50,7 @@
   ;##########################
   ;   Second Message Box  #
   ;##########################
-  push 0x40
+  push 0x40 ;1
   push box_title
   push box_message_alt
   push 0
@@ -89,9 +89,9 @@
   mov eax, 1000
   push eax
   call Sleep
-  call GetUserDefaultUILanguage
-  cmp eax, 0x0416
-  jmp final_pt
+  ;call GetUserDefaultUILanguage
+  ;cmp eax, 0x0416
+  ;jmp final_pt
   
  
   ;#########################
@@ -108,33 +108,30 @@
   ;####################################################################
   ; Translation for Portuguese - Tradução do texto para o Português #
   ;####################################################################
-  translate_pt:
-  push 0x30
-  push box_title
-  push box_message_pt
-  push 0
-  call _MessageBoxA
+  ;translate_pt:
+  ;push 0x30
+  ;push box_title
+  ;push box_message_pt
+  ;push 0
+  ;call _MessageBoxA
  
   ;#################################
   ; Caixa de Mensagem Secundário #
   ;#################################
-  push 0x40
-  push box_title
-  push box_message_alt_pt
-  push 0
-  call _MessageBoxA
-  jmp madao
+  ;push 0x40
+  ;push box_title
+  ;push box_message_alt_pt
+  ;push 0
+  ;call _MessageBoxA
+  ;jmp madao
   
   ;############################
   ;	Caixa de Mensagem Final #
   ;############################
-  final_pt:
-  push 0x40
-  push box_title
-  push box_message_end_pt
-  push 0
-  call _MessageBoxA
-  ret
-
-
-
+  ;final_pt:
+  ;push 0x40
+  ;push box_title
+  ;push box_message_end_pt
+  ;push 0
+  ;call _MessageBoxA
+  ;ret
