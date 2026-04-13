@@ -29,6 +29,9 @@ Adiós 🐱‍👤
 # Temp Windows Janitor 32-Bits 
 **Limpa** os arquivos na pasta **%Temp%** e na pasta **C:\Windows\Temp**
 
+##  Tradução
+A  tradução em Português está em reformulação após cenários marcados com falha na exibição de acentos e por esse motivo que a tradução foi removida temporariamente do Temp Windows Janitor.
+
 ## ☣️ Executável sinalizado como Malware
 O ficheiro executável (.exe) está sendo **sinalizado como malware** porque ele modifica arquivos **Temporários** e usa **Shell32.dll** e **User32.dll**.
 
