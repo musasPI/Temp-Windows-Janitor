@@ -9,15 +9,15 @@ If you want to use the tool, it is recommended to assemble the executable from t
 
 Assembler
 ```
-nasm -f win32 janitor_temp.asm
+nasm -f win32 windows-temp-janitor.asm
 ```
 Linker
 ```
-golink /entry _amanto janitor_temp.obj Shell32.dll User32.dll Kernel32.dll /mix
+golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename windows-temp-janitor.exe "WT Janitor.exe"
 ```
 Execution
 ```
-janitor_temp.exe
+"WT Janitor.exe"
 ```
 
 ### I'm beginner on Assembly Language
@@ -40,15 +40,15 @@ Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executáve
 
 Montador (Assembler)
 ```
-nasm -f win32 janitor_temp.asm
+nasm -f win32 windows-temp-janitor.asm
 ```
 Ligador (Linker)
 ```
-golink /entry _amanto janitor_temp.obj Shell32.dll User32.dll Kernel32.dll /mix
+golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename windows-temp-janitor.exe "WT Janitor.exe"
 ```
 Execução
 ```
-janitor_temp.exe
+"WT.exe"
 ```
 
 ### Sou novato na Linguagem Assembly!
