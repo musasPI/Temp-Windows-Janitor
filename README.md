@@ -1,5 +1,5 @@
-# Temp Windows Janitor 32-Bits
-**Cleans** files in the **%temp%** and **C:\Windows\Temp** folders
+# Windows Temp Janitor 32-Bits
+**Cleans** files and folders in the **%temp%** and **C:\Windows\Temp** folders
 
 ## ☢️ Executable flagged as malware
 The execute file (.exe) is **flagged as malware** because the code modifies **Temp files** and using **Shell32.dll** and **User32.dll**.
@@ -26,8 +26,8 @@ Don't worry about code!
 Adiós 🐱‍👤
 
 
-# Temp Windows Janitor 32-Bits 
-**Limpa** os arquivos na pasta **%Temp%** e na pasta **C:\Windows\Temp**
+# Windows Temp Janitor 32-Bits 
+**Limpa** os arquivos e pastas na pasta **%Temp%** e na pasta **C:\Windows\Temp**
 
 ##  Tradução
 A  tradução em Português está em reformulação após cenários marcados com falha na exibição de acentos e por esse motivo que a tradução foi removida temporariamente do Temp Windows Janitor.
