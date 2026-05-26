@@ -9,11 +9,11 @@ If you want to use the tool, it is recommended to assemble the executable from t
 
 Assembler
 ```
-nasm -f win32 windows-temp-janitor.asm
+nasm -f win32 wt.asm
 ```
 Linker
 ```
-golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename windows-temp-janitor.exe "WT Janitor.exe"
+golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
 ```
 Execution
 ```
@@ -40,11 +40,11 @@ Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executáve
 
 Montador (Assembler)
 ```
-nasm -f win32 windows-temp-janitor.asm
+nasm -f win32 wt-janitor.asm
 ```
 Ligador (Linker)
 ```
-golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename windows-temp-janitor.exe "WT Janitor.exe"
+golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
 ```
 Execução
 ```
