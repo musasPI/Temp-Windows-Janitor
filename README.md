@@ -1,8 +1,8 @@
 # Windows Temp Janitor 32-Bits
 **Cleans** files and folders in the **%temp%** and **C:\Windows\Temp** folders
 
-## ☢️ Executable flagged as malware
-The execute file (.exe) is **flagged as malware** because the code modifies **Temp files** and using **Shell32.dll** and **User32.dll**.
+## ☢️ False Negative in .exe file
+The execute file (.exe) can be **flagged as malware** but it's a **false-negative**
 
 ## 🏗️ Building the Executable
 If you want to use the tool, it is recommended to assemble the executable from the source code (.asm) using the **NASM** assembler and the **GoLink** linker.
@@ -32,8 +32,8 @@ Adiós 🐱‍👤
 ##  Tradução
 A  tradução em Português está em reformulação após cenários marcados com falha na exibição de acentos e por esse motivo que a tradução foi removida temporariamente do Temp Windows Janitor.
 
-## ☣️ Executável sinalizado como Malware
-O ficheiro executável (.exe) está sendo **sinalizado como malware** porque ele modifica arquivos **Temporários** e usa **Shell32.dll** e **User32.dll**.
+## ☣️ Detecção de Falso Negativo no arquivo executável
+O ficheiro executável (.exe) está sendo **sinalizado como malware** erroneamente e é apenas um caso de **FALSO-NEGATIVO**.
 
 ## 🏗️ Montando o Executável
 Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executável pelo código-fonte (.asm), utilizando do montador (assembler) **NASM** e o ligador (linker) **GoLink**.
