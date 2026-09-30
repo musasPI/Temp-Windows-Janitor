@@ -7,21 +7,21 @@ The execute file (.exe) can be **flagged as malware** but it's a **false-negativ
 ## 🏗️ Building the Executable
 If you want to use the tool, it is recommended to assemble the executable from the source code (.asm) using the **NASM** assembler and the **GoLink** linker.
 
-Assembler
+*Assembler*
 ```
 nasm -f win32 wt.asm
 ```
-Linker
+*Linker*
 ```
 golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
 ```
-Execution
+*Execution*
 ```
 "WT Janitor.exe"
 ```
 
 ### I'm beginner on Assembly Language
-Don't worry about code!
+Don't worry about the code!
 
 Adiós 🐱‍👤
 
@@ -38,20 +38,20 @@ O ficheiro executável (.exe) está sendo **sinalizado como malware** erroneamen
 ## 🏗️ Montando o Executável
 Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executável pelo código-fonte (.asm), utilizando do montador (assembler) **NASM** e o ligador (linker) **GoLink**.
 
-Montador (Assembler)
+*Montador (Assembler)*
 ```
 nasm -f win32 wt-janitor.asm
 ```
-Ligador (Linker)
+*Ligador (Linker)*
 ```
 golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
 ```
-Execução
+*Execução*
 ```
 "WT.exe"
 ```
 
 ### Sou novato na Linguagem Assembly!
-Não se preocupe por causa da sintaxe do código. (estou saindo do analfabetismo Assembly)
+Estou evoluindo na sintaxe do código.
 
 Até Logo🐱‍💻
