@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
-<div align="left">
-  <p align="left">
+<div align="center">
+  <p align="center">
     <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/README.md"><strong>« ENG » | </strong></a>
      <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/LEIAME.md"><strong> « PTBR »</strong></a>
   </p>
