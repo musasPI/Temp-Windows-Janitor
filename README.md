@@ -1,3 +1,13 @@
+<a id="readme-top"></a>
+<div align="center">
+  <p align="center">
+    <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/README.md"><strong>« ENG » | </strong></a>
+     <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/LEIAME.md"><strong> « PTBR »</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
+
 # Windows Temp Janitor 32-Bits
 **Cleans** files and folders in the **%temp%** and **C:\Windows\Temp** folders
 
