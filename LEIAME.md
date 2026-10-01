@@ -1,9 +1,7 @@
 <a id="readme-top"></a>
 <div align="center">
   <p align="center">
-    <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/README.md"><strong>« Leia em inglês »</strong></a>
-    <br />
-    <br />
+    <a href="https://github.com/musasPI/Temp-Windows-Janitor/blob/main/README.md"><strong>« ENG »</strong></a>
   </p>
 </div>
  
