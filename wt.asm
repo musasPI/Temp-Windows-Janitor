@@ -13,7 +13,7 @@ extern _ExitProcess                 ; Kernel32.dll
 extern Sleep                        ; Kernel32.dll
 
 section .data
-title_box db "Temp Janitor",0
+title_box db "JT - Temp Janitor",0
 ask_box db "Do you want to erase temporary files?",0
 initial_box db "W-Wait! The Janitor is looking for his broom",0
 middle_box db "The Janitor found the broom and now it's time for a magic clean!",0
