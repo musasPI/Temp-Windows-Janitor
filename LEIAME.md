@@ -9,6 +9,8 @@
 # Windows Temp Janitor 32-Bits 
 **Limpa** os arquivos e pastas na pasta **%Temp%** e na pasta **C:\Windows\Temp**
 
+Veja mais ferramentas ASM em https://codeberg.org/Almeida-B/WT-Temp-Janitor
+
 ##  Tradução
 A  tradução em Português está em reformulação após cenários marcados com falha na exibição de acentos e por esse motivo que a tradução foi removida temporariamente do Temp Windows Janitor.
 
