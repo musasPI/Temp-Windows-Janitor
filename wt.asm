@@ -13,7 +13,7 @@ extern _ExitProcess                 ; Kernel32.dll
 extern Sleep                        ; Kernel32.dll
 
 section .data
-title_box db "JT - Temp Janitor",0
+title_box db "Temp Janitor",0
 ask_box db "Do you want to erase temporary files?",0
 initial_box db "W-Wait! The Janitor is looking for his broom",0
 middle_box db "The Janitor found the broom and now it's time for a magic clean!",0
@@ -80,8 +80,8 @@ cleaning_time:
   ;	   0.75s Delay   #
   ;###################
     xor eax, eax                    ; Clear the register and empty it
-    mov eax, 0750                   ; Move the value of 2500 to EAX
-    push eax                        ; Push EAX w/ the value of 2500
+    mov eax, 0750                   ; Move the value of 0750 to EAX
+    push eax                        ; Push EAX w/ the value of 0750
     call Sleep                      ; Call the Sleep function on WinAPI and
                                     ; Sleeps the program for 0.75 seconds
 
