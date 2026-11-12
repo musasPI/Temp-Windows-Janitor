@@ -11,7 +11,7 @@
 
 **Cleans** files and folders in the **%temp%** and **C:\Windows\Temp** folders. 
 
-See more of ASM Tools on https://codeberg.org/Almeida-B/WT-Temp-Janitor
+See more of ASM Tools on https://codeberg.org/Almeida-B
 
 ## ☢️ False Negative in .exe file
 
