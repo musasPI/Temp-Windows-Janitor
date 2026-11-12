@@ -20,15 +20,15 @@ Caso queira utilizar a ferramenta, é recomendado montar (compilar) o executáve
 
 *Montador (Assembler)*
 ```
-nasm -f win32 wt-janitor.asm
+nasm -f win32 wt.asm
 ```
 *Ligador (Linker)*
 ```
-golink /entry _amanto windows-temp-janitor.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
+golink /entry _main wt.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt.exe "WT Janitor.exe"
 ```
 *Execução*
 ```
-"WT.exe"
+"WT Janitor.exe"
 ```
 
 ### Sou novato na Linguagem Assembly!
