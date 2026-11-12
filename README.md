@@ -39,7 +39,7 @@ golink /entry _main wt.obj Shell32.dll User32.dll Kernel32.dll /mix && rename wt
 
 ### I'm beginner on Assembly Language
 
-Don't worry about the code!
+Don't worry about the code (it's work)!
 
 Adiós 🐱‍👤
 
