@@ -77,10 +77,10 @@ cleaning_time:
                                     ; Show message box w/ title, icon and text
 
   ;###################
-  ;	   1s Delay     #
+  ;	   0.75s Delay   #
   ;###################
     xor eax, eax                    ; Clear the register and empty it
-    mov eax, 2500                   ; Move the value of 2500 to EAX
+    mov eax, 0750                   ; Move the value of 2500 to EAX
     push eax                        ; Push EAX w/ the value of 2500
     call Sleep                      ; Call the Sleep function on WinAPI and
                                     ; Sleeps the program for 2.5 seconds
@@ -121,6 +121,15 @@ cleaning_time:
                                     ; Open CMD as Administrator w/ UAC request and
                                     ; Erase files and subfolders on %windir%\Temp
    
+  ;###################
+  ;	   2s Delay     #
+  ;###################
+    xor eax, eax                    ; Clear the register and empty it
+    mov eax, 2000                   ; Move the value of 2500 to EAX
+    push eax                        ; Push EAX w/ the value of 2500
+    call Sleep                      ; Call the Sleep function on WinAPI and
+                                    ; Sleeps the program for 2.5 seconds
+
  ;#########################
  ;	  Last Message Box   #
  ;#########################
