@@ -83,7 +83,7 @@ cleaning_time:
     mov eax, 0750                   ; Move the value of 2500 to EAX
     push eax                        ; Push EAX w/ the value of 2500
     call Sleep                      ; Call the Sleep function on WinAPI and
-                                    ; Sleeps the program for 2.5 seconds
+                                    ; Sleeps the program for 0.75 seconds
 
   ;##########################
   ;   Second Message Box   #
@@ -125,10 +125,10 @@ cleaning_time:
   ;	   2s Delay     #
   ;###################
     xor eax, eax                    ; Clear the register and empty it
-    mov eax, 2000                   ; Move the value of 2500 to EAX
-    push eax                        ; Push EAX w/ the value of 2500
+    mov eax, 2000                   ; Move the value of 2000 to EAX
+    push eax                        ; Push EAX w/ the value of 2000
     call Sleep                      ; Call the Sleep function on WinAPI and
-                                    ; Sleeps the program for 2.5 seconds
+                                    ; Sleeps the program for 2 seconds
 
  ;#########################
  ;	  Last Message Box   #
